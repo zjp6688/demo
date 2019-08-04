@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../static/js/md5.js"></script>
+</head>
+<body>
+<form action="login" method="post">
+    <table>
+        <tr>
+            <td>
+                <input type="text" name="mobil" $.md5($("#password").val())>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="text" name="mobil">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="submit"  value="提交">
+            </td>
+        </tr>
+    </table>
+</form>
+</body>
+</html>
